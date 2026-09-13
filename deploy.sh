@@ -22,8 +22,8 @@ loading() {
 
 clear
 echo ""
-echo -e "  ${BOLD}${WHITE}SAEKA SSH GATEWAY DEPLOYER (QWIKLABS OPTIMIZED)${RESET}"
-echo -e "  ${MAGENTA}ENGINEERED BY SAEKA TOJIRP${RESET}"
+echo -e "  ${BOLD}${WHITE}REYNAN SSH GATEWAY DEPLOYER (QWIKLABS OPTIMIZED)${RESET}"
+echo -e "  ${MAGENTA}ENGINEERED BY REYNAN THE GREAT${RESET}"
 echo ""
 
 PROJECT_ID=$(gcloud config get-value project 2>/dev/null | tr -d '[:space:]')
@@ -37,8 +37,8 @@ echo ""
 echo -e "  ${CYAN}==================================================${NC}"
 echo -e "  ${GREEN}                 SERVICE NAME${NC}"
 echo -e "  ${CYAN}==================================================${NC}"
-read -r -p "$(echo -e "  ${CYAN}SERVICE NAME [saeka]: ${RESET}")" INPUT_NAME
-SERVICE_NAME=${INPUT_NAME:-saeka}
+read -r -p "$(echo -e "  ${CYAN}SERVICE NAME [REYNAN]: ${RESET}")" INPUT_NAME
+SERVICE_NAME=${INPUT_NAME:-REYNAN}
 echo ""
 
 echo -e "  ${CYAN}==================================================${NC}"
@@ -137,8 +137,8 @@ echo ""
 echo -e "  ${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 echo -e "  ${CYAN}                 CONNECTION DETAILS${RESET}"
 echo -e "  ${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
-echo -e "  ${GREEN}  SSH${RESET}  | WS Path: ${CYAN}/boysupot-ssh${RESET}  | Port: ${CYAN}443${RESET}"
-echo -e "  ${GREEN}  User: ${CYAN}master${RESET}   | Pass: ${CYAN}boysupot${RESET}"
+echo -e "  ${GREEN}  SSH${RESET}  | WS Path: ${CYAN}/REYNAN-ssh${RESET}  | Port: ${CYAN}443${RESET}"
+echo -e "  ${GREEN}  User: ${CYAN}REYNAN${RESET}   | Pass: ${CYAN}REYNAN${RESET}"
 echo -e "  ${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 echo ""
 
