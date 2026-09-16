@@ -48,14 +48,18 @@ echo -e "  ${YELLOW}1) asia-southeast1  (Singapore - Best for SEA)${RESET}"
 echo -e "  ${YELLOW}2) asia-east1       (Taiwan)${RESET}"
 echo -e "  ${YELLOW}3) us-central1      (Iowa)${RESET}"
 echo -e "  ${YELLOW}4) us-west1         (Oregon)${RESET}"
-echo ""
+echo -e "  ${YELLOW}5) asia-south1      (Mumbai)${RESET}"
+echo -e "  ${YELLOW}6) asia-southeast3  (Bangkok)${RESET}"
+echo -e "  ${YELLOW}7) australia-southeast1 (Sydney)${RESET}"
 read -r -p "$(echo -e "  ${CYAN}REGION [1-4]: ${RESET}")" REGION_CHOICE
 case "$REGION_CHOICE" in
     1) REGION="asia-southeast1" ;;
     2) REGION="asia-east1" ;;
     3) REGION="us-central1" ;;
     4) REGION="us-west1" ;;
-    *) REGION="asia-southeast1" ;;
+    5) REGION="asia-south1" ;;
+    5) REGION="asia-southeast3" ;;
+    5) REGION="australia-southeast1" ;;
 esac
 echo -e "  ${GREEN}SELECTED REGION: ${REGION}${RESET}"
 echo ""
