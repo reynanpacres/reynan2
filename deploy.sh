@@ -51,15 +51,15 @@ echo -e "  ${YELLOW}4) us-west1         (Oregon)${RESET}"
 echo -e "  ${YELLOW}5) asia-south1      (Mumbai)${RESET}"
 echo -e "  ${YELLOW}6) asia-southeast3  (Bangkok)${RESET}"
 echo -e "  ${YELLOW}7) australia-southeast1 (Sydney)${RESET}"
-read -r -p "$(echo -e "  ${CYAN}REGION [1-4]: ${RESET}")" REGION_CHOICE
+read -r -p "$(echo -e "  ${CYAN}REGION [1-7]: ${RESET}")" REGION_CHOICE
 case "$REGION_CHOICE" in
     1) REGION="asia-southeast1" ;;
     2) REGION="asia-east1" ;;
     3) REGION="us-central1" ;;
     4) REGION="us-west1" ;;
     5) REGION="asia-south1" ;;
-    5) REGION="asia-southeast3" ;;
-    5) REGION="australia-southeast1" ;;
+    6) REGION="asia-southeast3" ;;
+    7) REGION="australia-southeast1" ;;
 esac
 echo -e "  ${GREEN}SELECTED REGION: ${REGION}${RESET}"
 echo ""
@@ -73,7 +73,7 @@ echo -e "  ${YELLOW}3) GAMING       (4 vCPU / 8Gi   RAM)${RESET}"
 echo -e "  ${YELLOW}4) ULTRA        (4 vCPU / 16Gi  RAM)${RESET}"
 echo -e "  ${YELLOW}5) CUSTOM${RESET}"
 echo ""
-read -r -p "$(echo -e "  ${CYAN}CHOICE [1-5]: ${RESET}")" MODE_CHOICE
+read -r -p "$(echo -e "  ${CYAN}CHOICE [1-7]: ${RESET}")" MODE_CHOICE
 case "$MODE_CHOICE" in
     2) CPU="2"; RAM="4Gi"; MODE="STREAMING"; MAX_INSTANCES="4";;
     3) CPU="4"; RAM="8Gi"; MODE="GAMING"; MAX_INSTANCES="4";;
